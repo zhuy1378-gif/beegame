@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="個人網頁 - 關於我、技能、作品集與聯絡方式" />
+  <title>我的個人網頁</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Alex</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">首頁</a></li>
+        <li><a href="#about" class="nav-link">關於我</a></li>
+        <li><a href="#skills" class="nav-link">技能</a></li>
+        <li><a href="#projects" class="nav-link">作品集</a></li>
+        <li><a href="#contact" class="nav-link">聯絡我</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="開啟選單">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 嗨，我是</p>
+      <h1 class="hero-name">
+        <span id="typed-name">Alex Chen</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span class="subtitle-static">我是一位</span>
+        <span class="subtitle-dynamic" id="typed-role"></span>
+        <span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc">熱愛程式設計與創意，喜歡把想法變成真實的作品。</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">查看作品</a>
+        <a href="#contact" class="btn btn-outline">聯絡我</a>
+      </div>
+      <div class="hero-scroll">
+        <span>往下滾動</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="avatar-card">
+        <div class="avatar-glow"></div>
+        <div class="avatar-circle">
+          <span class="avatar-emoji">👨‍💻</span>
+        </div>
+        <div class="avatar-badge">
+          <span class="badge-dot"></span>
+          正在學習中
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">關於我</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>嗨！我叫 <strong>Alex Chen</strong>，是一名對程式設計充滿熱情的學生。</p>
+          <p>我喜歡透過程式碼來解決問題、創造有趣的東西。目前正在學習 HTML、CSS、JavaScript，希望未來能成為一名優秀的網頁開發者。</p>
+          <p>除了寫程式，我也喜歡打籃球、聽音樂和看科幻電影。</p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <span>台灣・台北</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎓</span>
+              <span>高中生</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💡</span>
+              <span>熱愛學習新技術</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎯</span>
+              <span>夢想成為全端工程師</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats fade-in">
+          <div class="stat-card">
+            <span class="stat-num" data-target="12">0</span>
+            <span class="stat-label">完成的專案</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-label">學習的語言</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-label">獲獎次數</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="365">0</span>
+            <span class="stat-label">學習天數</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">我的技能</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="78"></div>
+          </div>
+          <span class="skill-percent">78%</span>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="65"></div>
+          </div>
+          <span class="skill-percent">65%</span>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="55"></div>
+          </div>
+          <span class="skill-percent">55%</span>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="45"></div>
+          </div>
+          <span class="skill-percent">45%</span>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🛠️</div>
+          <h3>Git</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="60"></div>
+          </div>
+          <span class="skill-percent">60%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">作品集</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card fade-in">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <span class="project-emoji">🌦️</span>
+          </div>
+          <div class="project-body">
+            <h3>天氣預報 App</h3>
+            <p>使用 JavaScript 串接天氣 API，顯示即時天氣資訊，支援搜尋城市。</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <span class="project-emoji">📝</span>
+          </div>
+          <div class="project-body">
+            <h3>待辦事項清單</h3>
+            <p>可以新增、刪除、標記完成的 Todo List，資料儲存在 localStorage。</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <span class="project-emoji">🎮</span>
+          </div>
+          <div class="project-body">
+            <h3>猜數字遊戲</h3>
+            <p>電腦隨機產生數字，玩家輸入猜測，顯示提示直到猜中為止。</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">聯絡我</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <p class="contact-desc">如果你有任何問題或合作想法，歡迎隨時聯絡我！</p>
+          <div class="contact-links">
+            <a href="mailto:alex@example.com" class="contact-item" id="contact-email">
+              <span class="contact-icon">📧</span>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">alex@example.com</span>
+              </div>
+            </a>
+            <a href="#" class="contact-item" id="contact-github">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/alexchen</span>
+              </div>
+            </a>
+            <a href="#" class="contact-item" id="contact-instagram">
+              <span class="contact-icon">📸</span>
+              <div>
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">@alex.codes</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form fade-in" id="contact-form">
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" placeholder="你的名字" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">訊息</label>
+            <textarea id="message" name="message" placeholder="想說什麼呢..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">送出訊息 ✉️</button>
+          <p class="form-success" id="form-success">✅ 訊息已送出，謝謝！</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Made with <span class="heart">❤️</span> by <strong>Alex Chen</strong>
+      </p>
+      <p class="footer-copy">© 2026 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
